@@ -1,0 +1,124 @@
+.row{
+    margin-bottom: 0px;
+}
+.row .col{
+    padding: 0;
+}
+
+.logo-img{
+    width: 95%;
+}
+
+body, html {
+  margin:0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.section-div{
+    height: 40vmax;
+}
+
+.title{
+    font-size: 15vmin;
+    line-height: 12vmin !important;
+    font-weight: bold;
+    letter-spacing: .3vmin;
+}
+
+.subtitle{
+    font-size: 5vmin;
+    font-weight: bold;
+}
+
+.paragraph{
+    font-size: larger;
+     text-align: justify;
+}
+.video-row {
+  height: calc(100vh - 64px);
+  padding-top: calc(33vh - 64px);
+}
+
+#desktop-video{
+    height: 50vh;
+}
+#mobile-video{
+    width: 50vw;
+}
+
+.wediv{
+    height: 100vh;
+}
+
+.we-mobile{
+    background-size: auto 100%;
+
+}
+
+.we-desktop{
+    background-size: 100% auto;
+    padding: 0px !important;
+
+}
+#we1{
+    background-image: url('../media/img/wemake.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#we2{
+    background-image: url('../media/img/weplay.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#we3{
+    background-image: url('../media/img/wewin.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bidiv{
+    overflow: hidden;
+}
+
+#bi-img, #team-img{
+    width: 100vw;
+    height: auto;
+}
+
+#fact-row{
+    padding: 0 4vw;
+    margin: 2vw 0;  
+}
+
+.fact-img{
+    padding: 0 3.5vw;
+    max-width: 45vw;
+    min-width: 15.33333vw;
+}
+
+.fact-text{
+    text-align: center;
+}
+
+.fact-text h1, h2, h3, h4, h5, h6 {
+    line-height:  60% !important;
+}
+
+.software-logo{
+    padding: 2% !important;
+}
+
+.blog-bg{
+    background-image: url('../media/img/blog.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;        
+}
+
+.blog-bg div h1{
+    font-size: 25vmax;
+    font-weight: bold;
+    letter-spacing: .5vw;
+}
