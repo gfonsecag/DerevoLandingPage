@@ -16,69 +16,80 @@ body, html {
 }
 
 .section-div{
-    height: 40vmax;
+    height: 60vmin;
 }
 
 .title{
-    font-size: 15vmin;
-    line-height: 12vmin !important;
+ /*   font-size: 11vmin;
+    line-height: 12vmin !important;*/
     font-weight: bold;
-    letter-spacing: .3vmin;
+    line-height: 95%;
 }
 
 .subtitle{
-    font-size: 5vmin;
+/*    font-size: 5vmin; */
     font-weight: bold;
 }
 
 .paragraph{
-    font-size: larger;
-     text-align: justify;
+    font-size: medium;
+     text-align: left;
+}
+
+.line{
+    height: 1vh;
 }
 .video-row {
   height: calc(100vh - 64px);
   padding-top: calc(33vh - 64px);
+  overflow: hidden;
 }
 
-#desktop-video{
-    height: 50vh;
-}
-#mobile-video{
-    width: 50vw;
+#landing-video{
+    height: 90vmin;
+    margin: -60vmin;  
 }
 
 .wediv{
-    height: 100vh;
+    height: 100vmin;
 }
 
-.we-mobile{
-    background-size: auto 100%;
-
-}
-
-.we-desktop{
-    background-size: 100% auto;
-    padding: 0px !important;
-
-}
 #we1{
-    background-image: url('../media/img/wemake.jpg');
+    background-image: url('../media/img/we1.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
+    background-size: auto 100vmax;  
+    padding-top: 30vmin;
 }
 
 #we2{
-    background-image: url('../media/img/weplay.jpg');
+    background-image: url('../media/img/we2.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
+    background-size: auto 100vmax;   
+    padding-top: 30vmin;
 }
 
 #we3{
-    background-image: url('../media/img/wewin.jpg');
+    background-image: url('../media/img/we3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: auto 100vmax;
+    padding-top: 30vmin;
 }
 
+.wetext{
+    font-size: xx-large;
+    text-align: left;
+}
+.lightfont{
+    font-weight: 200;
+}
+
+.semibold{
+    font-weight: 300;
+    font-size: large;
+}
 .bidiv{
     overflow: hidden;
 }
@@ -94,19 +105,28 @@ body, html {
 }
 
 .fact-img{
-    padding: 0 3.5vw;
+    padding: 1vmin 2.5vmax;;
     max-width: 45vw;
     min-width: 15.33333vw;
 }
 
 .fact-text{
     text-align: center;
+    color: #423a83;
 }
 
-.fact-text h1, h2, h3, h4, h5, h6 {
-    line-height:  60% !important;
+.fact-text * {
+    line-height:  90% !important;
+    font-weight: bold;
 }
 
+.fact-text h6{
+    font-size: larger;
+}
+
+.fact-text h5{
+    font-size: xx-large;
+}
 .software-logo{
     padding: 2% !important;
 }
@@ -114,11 +134,12 @@ body, html {
 .blog-bg{
     background-image: url('../media/img/blog.jpg');
     background-repeat: no-repeat;
-    background-position: center center;        
+    background-position: center center;  
+    background-size: 100vmax;      
 }
 
 .blog-bg div h1{
-    font-size: 25vmax;
+    font-size: 20vmin;
     font-weight: bold;
     letter-spacing: .5vw;
 }
