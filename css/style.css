@@ -20,27 +20,27 @@ body, html {
 }
 
 .title{
- /*   font-size: 11vmin;
-    line-height: 12vmin !important;*/
     font-weight: bold;
     line-height: 95%;
 }
 
 .subtitle{
-/*    font-size: 5vmin; */
     font-weight: bold;
 }
 
 .paragraph{
     font-size: medium;
-     text-align: left;
+    text-align: justify;
+    -moz-text-align-last: right;
+    text-align-last: left;
 }
 
 .line{
     height: 1vh;
 }
+
 .video-row {
-  height: calc(100vh - 64px);
+  height: 75vh;
   padding-top: calc(33vh - 64px);
   overflow: hidden;
 }
@@ -50,10 +50,162 @@ body, html {
     margin: -60vmin;  
 }
 
+@keyframes arrow-blink1 {
+    0% {color: white; font-size: 3.8rem;}
+    25% {color: black; font-size: 4rem;}
+    50% {color: white;}
+    75% {color: white;}
+    100% {color: white;}
+
+}
+
+@keyframes arrow-blink2 {
+    0% {color: white; }
+    15% {color: white; font-size: 4.8rem;}
+    40% {color: black; font-size: 5rem;}
+    75% {color: white;}
+    100% {color: white;}
+}
+
+@keyframes arrow-blink3 {
+    0% {color: white;}
+    25% {color: white;}
+    40% {color: white; font-size: 5.8rem;}
+    65% {color: black; font-size: 6rem;}
+    100% {color: white;}
+}
+
+.arrow-row{
+    height: 20vh;
+    overflow: hidden;
+}
+
+.arrow-col{
+    text-align: center;
+    height: 1rem; 
+}
+
+.arrow-col i{
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;   
+    animation-timing-function: ease;
+}
+
+.arrow1{
+    animation-name: arrow-blink1;
+    font-size: 4rem;    
+}
+
+.arrow2{
+    animation-name: arrow-blink2;
+    font-size: 5rem;    
+}
+
+.arrow3{
+    animation-name: arrow-blink3;
+    font-size: 6rem;    
+}
+
 .wediv{
     height: 100vmin;
 }
 
+@keyframes glitch-anim {
+  0% {
+    clip: rect(70px, 450px, 76px, 0);
+  }
+  20% {
+    clip: rect(29px, 450px, 16px, 0);
+  }
+  40% {
+    clip: rect(76px, 450px, 3px, 0);
+  }
+  60% {
+    clip: rect(42px, 450px, 78px, 0);
+  }
+  80% {
+    clip: rect(15px, 450px, 13px, 0);
+  }
+  100% {
+    clip: rect(53px, 450px, 5px, 0);
+  }
+}
+
+.glitch {
+  position: relative;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  /* ... anything needed to make it identical */
+
+  /* variation */
+  left: 2px;
+  text-shadow: -1px 0 red;
+  
+  clip: rect(27px, 450px, 42px, 0);
+  animation: glitch-anim-2 2s infinite linear alternate-reverse;
+
+}
+.glitch::after {
+  /* ... anything needed to make it identical */
+
+  /* variation */
+    left: -2px;
+    text-shadow: -1px 0 blue;
+    clip: rect(5px, 450px, 32px, 0);
+    animation: glitch-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(5px, 450px, 10px, 0);
+  }
+  20% {
+    clip: rect(16px, 450px, 21px, 0);
+  }
+  40% {
+    clip: rect(3px, 450px,7px, 0);
+  }
+  60% {
+    clip: rect(19px, 450px, 24px, 0);
+  }
+  80% {
+    clip: rect(10px, 450px, 13px, 0);
+  }
+  100% {
+    clip: rect(25px, 450px, 30px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip: rect(53px, 450px, 5px, 0);
+  }
+  20% {
+    clip: rect(15px, 450px, 13px, 0);
+  }
+  40% {
+    clip: rect(42px, 450px, 78px, 0);
+  }
+  60% {
+    clip: rect(76px, 450px, 3px, 0);
+  }
+  80% {
+    clip: rect(29px, 450px, 16px, 0);
+  }
+  100% {
+    clip: rect(70px, 450px, 76px, 0);
+  }
+}
 #we1{
     background-image: url('../media/img/we1.jpg');
     background-repeat: no-repeat;
@@ -78,6 +230,20 @@ body, html {
     padding-top: 30vmin;
 }
 
+@keyframes wehover {
+    0% {color: white;}
+    25% {color: white;}
+    40% {color: white; font-size: 5.8rem;}
+    65% {color: black; font-size: 6rem;}
+    100% {color: white;}
+}
+
+#we1:hover, #we2:hover, #we3:hover{
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;   
+    animation-timing-function: ease;
+    background-size: auto 110vmax;    
+}
 .wetext{
     font-size: xx-large;
     text-align: left;
@@ -91,7 +257,24 @@ body, html {
     font-size: large;
 }
 .bidiv{
-    overflow: hidden;
+    background: white; /* For browsers that do not support gradients */    
+    background: -webkit-radial-gradient(white,rgb(228, 247, 243) ); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white,rgb(228, 247, 243) ); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white,rgb(228, 247, 243) ); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white,rgb(228, 247, 243)  ); /* Standard syntax (must be last) */
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.bititle{
+    margin-bottom: 0px;
+}
+.bititle1{
+    font-size: 6rem;
+}
+
+.bititle2{
+    font-size: 4rem;
 }
 
 #bi-img, #team-img{
@@ -105,9 +288,7 @@ body, html {
 }
 
 .fact-img{
-    padding: 1vmin 2.5vmax;;
-    max-width: 45vw;
-    min-width: 15.33333vw;
+    padding: 2rem 2rem 0 2rem;
 }
 
 .fact-text{
@@ -127,6 +308,11 @@ body, html {
 .fact-text h5{
     font-size: xx-large;
 }
+
+.platformdiv{
+    padding-top: 5%;
+    padding-bottom: 5%;    
+}
 .software-logo{
     padding: 2% !important;
 }
@@ -142,4 +328,43 @@ body, html {
     font-size: 20vmin;
     font-weight: bold;
     letter-spacing: .5vw;
+}
+
+.coffeeform{
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.input-field label {
+    color: #000000;
+    padding-left: 1% !important;
+    font-size: 1.1rem;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: #000;
+}
+
+/* label focus color */
+#textarea1:focus + label {
+ color: #000;
+}
+
+   #textarea1:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+
+/* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+
+.input-field {
+    position: relative;
+    margin-top: 1rem;
+    padding-right: 1% !important;
+    padding-left: 1% !important;
 }

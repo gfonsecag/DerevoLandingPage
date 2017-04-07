@@ -54,20 +54,33 @@
         </nav>
     </div>
 
-    <!-- Video for desktop -->
+    <!-- Video -->
     <div class="row video-row">
         <div class="col s12 center">
             <video id="landing-video" src="media/video/dataLogo.mp4" autoplay loop></video>
         </div>
     </div>
 
+    <div class="row arrow-row">
+        <div class="col offset-s4 s4 arrow-col">
+            <i class="material-icons arrow1">keyboard_arrow_down</i>
+        </div>
+        <div class="col offset-s4 s4 arrow-col">
+            <i class="material-icons arrow2">keyboard_arrow_down</i>
+        </div>
+        <div class="col offset-s4 s4 arrow-col">
+            <i class="material-icons arrow3">keyboard_arrow_down</i>
+        </div>
+    </div>
+
+
 <!-- Page content -->
 
 <!-- Simple responsive we slider -->
-    <div class="row wediv">
+    <div class="row">
         <div id="we1" class="col s12 m4 center wediv we-desktop">  
-            <div class="col offset-s3 s6 white-text lightfont wetext">we play</div>
-            <div class="col offset-s3 s9 white-text boldfont wetext">with science</div>          
+            <div class="col offset-s3 s6 white-text lightfont wetext glitch" data-text="we play">we play</div>
+            <div class="col offset-s3 s9 white-text boldfont wetext glitch" data-text="with science">with science</div>          
             <div class="col offset-s3 s6 white-text semibold wetext">
                 <span class="pink darken-2">data science</span>
             </div>  
@@ -99,9 +112,32 @@
             </div>  
         </div>
     </div>
+ 
+<!-- B.I section -->
+    <div class="row bidiv">
+        <div class="col s12">
+            <div class="col offset-m2 m9 offset-s1 s10 left-align deep-purple-text text-darken-4">
+                <h1 class="title bititle">
+                    <span class="bititle1">B.I.</span>
+                    <br>
+                    <span class="bititle2">made simple</span>
+                </h1>
+            </div>
+            <div class="col offset-m2 m8 l7 offset-s1 s10 left-align deep-purple-text text-darken-4"><h5 class="subtitle">we make information matter<h5></div>
+            <div class="col offset-m2 m7 offset-s1 s10 line deep-purple darken-4"></div>
+            <div class="col offset-m2 m7 offset-s1 s10 left-align">
+                <p class="paragraph  deep-purple-text text-darken-4">
+                    Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar
+                    nuevos objetivos , lograr nuevas metas y progresar mediante análisis e
+                    interpretacion de su infrmacion.
 
-<!-- B.I. section -->
-            <img id="bi-img" src="media/img/biMadeSimple.jpg" />
+                    Por medio de distintos metodos y programas extraemos esa información para
+                    transformarla en datos y resultados que ayuden a tomar desiciones estrategicas
+                    que beneficien a la empresa.
+                </p>
+            </div>
+        </div>
+    </div>
 
 <!-- Facts section -->
     <div id="fact-row" class="row">
@@ -173,7 +209,7 @@
     <img id="team-img" src="media/img/team.jpg" />
 
 <!-- Platforms section -->
-    <div class="row">
+    <div class="row platformdiv">
         <div class="col s12">
             <div class="col offset-m2 m8 offset-s1 s10 left-align cyan-text text-lighten-3"><h1 class="title">When sience<br>meets technology</h1></div>
             <div class="col offset-m2 m5 offset-s1 s10 line cyan lighten-3"></div>
@@ -186,9 +222,9 @@
                 </p>
             </div>
             <div class="col offset-s1 s10">
-            <div class="col s4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
-            <div class="col s4 software-logo"><img class="responsive-img" src="media/img/tableaulogo.png"></div>
-            <div class="col s4 software-logo"><img class="responsive-img" src="media/img/rapidminerlogo.png"></div>
+            <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
+            <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/tableaulogo.png"></div>
+            <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/rapidminerlogo.png"></div>
             </div>
 
         </div>
@@ -206,13 +242,32 @@
         <div class="col s12">
             <div class="col offset-m2 m8 offset-s1 s10 left-align brown-text "><h1 class="title">Let's have a coffee</h1></div>
             <div class="col offset-m2 m8 offset-s1 s10 line brown"></div>
-            <div class="col offset-s2 s7 left-align">
-                <p>
-                    Para poder convertir tus datos en soluciones implementamos softwares<br>
-                    disruptivos con la capacidad de manejar grandes cantidades de informacion<br>
-                    de formar organizada.
-                </p>
-            </div>
+
+
+    <form class="col offset-m2 m8 offset-s1 s10 coffeeform">
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">Nombre</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="company" type="text" class="validate">
+          <label for="company">Compañia</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="email" type="text" class="validate">
+          <label for="email">Correo</label>
+        </div>
+        <div class="input-field col s12 m6">
+          <input id="phone" type="text" class="validate">
+          <label for="phone">Telefono</label>
+        </div>
+        <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Messsage</label>
+        </div>
+      </div>
+    </form>
 
         </div>
     </div>
