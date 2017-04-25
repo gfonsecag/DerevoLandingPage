@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<body>
+<body class="white">
 
     <!-- Top menu for mobile -->
     <ul id="slide-out" class="side-nav">
@@ -37,16 +37,18 @@
     <div class="navbar-fixed">
         <nav class="grey darken-4">
             <div class="nav-wrapper">
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li class="logo">
-                        <a href=""><img src="media/img/logo.jpg" class="logo-img"></a>
-                    </li>
-                    <li><a href="">qué hacemos</a></li>
-                    <li><a href="">human power</a></li>
-                    <li><a href="">sciencie</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">contacto</a></li>
-                </ul>
+                <div class="container hide-on-med-and-down">
+                    <a href="index.html" class="brand-logo left "><img src="media/img/logo.png" class="logo-img"></a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a href="ondemand.html">on demand</a></li>
+                        <li><a href="training.html">capacitacion</a></li>
+                        <li><a href="support.html">soporte</a></li>
+                        <li><a href="">on cloud</a></li>
+                        <li><a href="">US/MX</a></li>
+
+                    </ul>
+                </div>
+                <a href="#" class="brand-logo center hide-on-large-only"><img src="media/img/logo.png" class="logo-img"></a>
                 <ul id="nav-mobile" class="left hide-on-large-only">
                     <li><a href=""><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
                 </ul>
@@ -56,7 +58,7 @@
 
     <!-- Video -->
     <div>
-        <div class="row video-row">
+        <div class="row video-row valign-wrapper">
             <div class="col s12 center">
                 <video id="landing-video" src="media/video/dataLogo.mp4" autoplay loop></video>
             </div>
@@ -76,73 +78,129 @@
     </div>
 
 
-<!-- Page content -->
+    <!-- Page content -->
 
-<!-- Simple responsive we slider -->
-    <div class="row">
-        <div id="we1" class="col s12 m4 center we-desktop">  
+    <!-- Simple responsive we slider -->
+    <div id="content" class="row hide-on-med-and-down">
+        <div id="we1" class="col s12 m4 center we-desktop">
             <div class="wediv">
-            <div class="col offset-s4 s4">
-                <div class="example-three">
-                <img class="responsive-img" src="media/img/circle.png"> 
-                <img class="responsive-img" src="media/img/circler.png"> 
-                <img class="responsive-img" src="media/img/circleb.png">    
+                <div class="col offset-s3 s6">
+                    <div class="example-three">
+                        <img class="we-img" src="media/img/circle.png">
+                        <img class="we-img" src="media/img/circler.png">
+                        <img class="we-img" src="media/img/circleb.png">
+                    </div>
                 </div>
-            </div>        
-            <div class="col offset-s4 s6 white-text lightfont wetext glitch" data-text="we play">we play</div>
-            <div class="col offset-s4 s8 white-text boldfont wetext glitch" data-text="with science">with science</div>          
-            <div class="col offset-s4 s6 white-text semibold wetext">
-                <span class="pink darken-2">data science</span>
-            </div>  
-            <div class="col offset-s4 s6 white-text semibold wetext">
-                <span class="pink darken-2">data discovery</span>
-            </div>  
+                <div class="col offset-s3 s6 white-text lightfont wetext glitch" data-text="we play">we play</div>
+                <div class="col offset-s3 s6 white-text boldfont wetext glitch" data-text="with science">with science</div>
+                <div class="col offset-s3 s6 white-text semibold wetext">
+                    <span class="pink darken-2">data science &nbsp;</span>
+                </div>
+                <div class="col offset-s3 s6 white-text semibold wetext">
+                    <span class="pink darken-2">data discovery &nbsp;</span>
+                </div>
             </div>
         </div>
         <div id="we2" class="col s12 m4 center we-desktop">
+            <div id="we2vid">
+                <video autoplay loop>
+                    <source src="media/video/ink.mp4" type="video/mp4">
+                </video>
+            </div>
             <div class="wediv">
                 <div class="col offset-s4 s4">
-                <img class="responsive-img" src="media/img/triangle.png">    
-            </div>   
-            <div class="col offset-s4 s6 white-text lightfont wetext">we make</div>
-            <div class="col offset-s4 s6 white-text boldfont wetext">it fun</div>          
-            <div class="col offset-s4 s6 black-text semibold wetext">
-                <span class="lime accent-3">art</span>
-            </div>  
-            <div class="col offset-s4 s6 black-text semibold wetext">
-                <span class="lime accent-3">human power</span>
-            </div>  
+                    <img class="we-img" src="media/img/triangle.png">
+                </div>
+                <div class="col offset-s4 s6 white-text lightfont wetext">we make</div>
+                <div class="col offset-s4 s6 white-text boldfont wetext">it fun</div>
+                <div class="col offset-s4 s6 black-text semibold wetext">
+                    <span class="lime accent-3">art &nbsp;</span>
+                </div>
+                <div class="col offset-s4 s6 black-text semibold wetext">
+                    <span class="lime accent-3">human power &nbsp;</span>
+                </div>
             </div>
         </div>
         <div id="we3" class="col s12 m4 center we-desktop">
             <div class="wediv">
-            <div class="col offset-s4 s4">
-                <img class="responsive-img" src="media/img/circletriangle.png">    
-            </div>   
-            <div class="col offset-s4 s6 white-text lightfont wetext">we make</div>
-            <div class="col offset-s4 s6 white-text boldfont wetext">you win</div>          
-            <div class="col offset-s4 s9 white-text semibold wetext">
-                <span class="black">simplified corporated</span>
-            </div>  
-            <div class="col offset-s4 s9 white-text semibold wetext">
-                <span class="black">data that makes</span>
-            </div>  
-            <div class="col offset-s4 s9 white-text semibold wetext">
-                <span class="black">you bussines grow</span>
-            </div>  
+                <div class="col offset-s4 s4">
+                    <img class="we-img" src="media/img/circletriangle.png">
+                </div>
+                <div class="col offset-s4 s6 white-text lightfont wetext">we make</div>
+                <div class="col offset-s4 s6 white-text boldfont wetext">you win</div>
+                <div class="col offset-s4 s9 white-text semibold wetext">
+                    <span class="black">simplified corporated &nbsp;</span>
+                </div>
+                <div class="col offset-s4 s9 white-text semibold wetext">
+                    <span class="black">data that makes &nbsp;</span>
+                </div>
+                <div class="col offset-s4 s9 white-text semibold wetext">
+                    <span class="black">you bussines grow &nbsp;</span>
+                </div>
             </div>
         </div>
     </div>
- 
-<!-- B.I 1° section -->
-    <div class="row bidiv ptb2rem">
+
+    <!-- B.I 1° section -->
+    <div class="row bidiv ptb5rem">
         <div class="col s12">
             <div class="col offset-m2 m9 offset-s1 s10 left-align deep-purple-text text-darken-4">
-                <h1 class="title bititle">
-                    <span class="bititle1">B. I.</span>
-                    <br>
-                    <span class="bititle2">made simple</span>
-                </h1>
+                <svg class="svg-defs" style="position: fixed;">
+                    <defs>
+                        <pattern id="pattern" patternUnits="objectBoundingBox" width="1" height="1">
+                            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="media/img/bimask.jpg" width="600" height="300"></image>
+                        </pattern>
+                    </defs>
+                </svg>
+                <div class="demo">
+                    <svg width="100%" height="9rem">
+                        <text x="0" y="120" style="
+                            font-size: 11rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">B</text>
+                        <text x="83" y="120" style="
+                            font-size: 11rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">.</text>
+                        <text x="130" y="120" style="
+                            font-size: 11rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">I</text>
+                        <text x="158" y="120" style="
+                            font-size: 11rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">.</text>
+                    </svg>
+                    <svg width="100%" height="6rem" class="hide-on-small-only">
+                        <text x="0" y="70" style="
+                            font-size: 6rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">
+                            made simple
+                        </text>
+                    </svg>
+                        <svg width="100%" height="12rem" class="hide-on-med-and-up">
+                        <text x="0" y="70" style="
+                            font-size: 6rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">
+                            made
+                        </text>
+                        <text x="0" y="140" style="
+                            font-size: 6rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">
+                            simple
+                        </text>
+                    </svg>
+                </div>
             </div>
             <div class="col offset-m2 m8 l7 offset-s1 s10 left-align deep-purple-text text-darken-4">
                 <h5 class="subtitle">we make information matter</h5>
@@ -150,31 +208,29 @@
             <div class="col offset-m2 m7 offset-s1 s10 line deep-purple darken-4"></div>
             <div class="col offset-m2 m7 offset-s1 s10 left-align">
                 <p class="paragraph  deep-purple-text text-darken-4">
-                    Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar
-                    nuevos objetivos , lograr nuevas metas y progresar mediante análisis e
-                    interpretacion de su infrmacion.
-
-                    Por medio de distintos metodos y programas extraemos esa información para
-                    transformarla en datos y resultados que ayuden a tomar desiciones estrategicas
-                    que beneficien a la empresa.
+                    Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar nuevos objetivos , lograr nuevas metas y progresar
+                    mediante análisis e interpretacion de su infrmacion. Por medio de distintos metodos y programas extraemos
+                    esa información para transformarla en datos y resultados que ayuden a tomar desiciones estrategicas que
+                    beneficien a la empresa.
                 </p>
             </div>
         </div>
     </div>
 
-<!-- B.I 2° section -->
+    <!-- B.I 2° section -->
     <div class="row bi2div grey lighten-3 ptb2rem">
         <div class="col s12">
             <div class="col offset-m2 m10 offset-s1 s11 left-align">
-                <h1 class="title bititle">
-                    <span class="bititle2  light-blue-text text-darken-4">Bussines discovery proccess</span>
-                </h1>
+                <h2 class="title light-blue-text text-darken-4">
+                    Bussines discovery proccess
+                </h2>
             </div>
             <div class="col m2 s1 teal accent-2 bi2line"></div>
             <div class="col m8 l7 s10 left-align black-text">
                 <h5 class=" col subtitle teal accent-2">Design thinking + User experience</h5>
             </div>
 
+            <div class="col s12"></div>
             <div class="col offset-m2 m8  offset-s1 s10">
                 <div class="row">
                     <div class="col m3 s12">
@@ -185,7 +241,7 @@
                             <p class="col offset-s1 s10 subtitle  white-text">YOUR PAST</p>
                         </div>
                         <div class="col m1"></div>
-                    </div>                
+                    </div>
                     <div class="col m3 s12">
                         <div class="col s12 m11 pink darken-1 discovery-step">
                             <h2 class="offset-s1 s10 col lightfont  white-text">2</h2><br>
@@ -194,7 +250,7 @@
                             <p class="col offset-s1 s10 subtitle white-text">YOUR PRESENT</p>
                         </div>
                         <div class="col m1"></div>
-                    </div>    
+                    </div>
                     <div class="col m3 s12">
                         <div class="col s12 m11 brown darken-1 discovery-step">
                             <h2 class="col offset-s1 s10 lightfont white-text">3</h2><br>
@@ -203,7 +259,7 @@
                             <p class="col offset-s1 s10 subtitle white-text">YOUR FUTURE</p>
                         </div>
                         <div class="col m1"></div>
-                    </div>    
+                    </div>
                     <div class="col m3 s12">
                         <div class="col s12 m11 indigo darken-1 discovery-step">
                             <h2 class="col offset-s1 s10 lightfont white-text">4</h2>
@@ -212,196 +268,250 @@
                             <p class="col offset-s1 s10 subtitle white-text">YOUR POSSIBLE FUTURE</p>
                         </div>
                         <div class="col m1"></div>
-                    </div> 
-                </div>   
+                    </div>
+                </div>
             </div>
 
             <div class="col offset-m2 m7 offset-s1 s10"></div>
             <div class="col offset-m2 m7 offset-s1 s10 left-align">
                 <p class="subtitle deep-purple-text text-darken-4">
-                    Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar
-                    nuevos objetivos , lograr nuevas metas y progresar mediante análisis e
-                    interpretacion de su infrmacion.
-
-                    Por medio de distintos metodos y programas extraemos esa información para
-                    transformarla en datos y resultados que ayuden a tomar desiciones estrategicas
-                    que beneficien a la empresa.
+                    Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar nuevos objetivos , lograr nuevas metas y progresar
+                    mediante análisis e interpretacion de su infrmacion. Por medio de distintos metodos y programas extraemos
+                    esa información para transformarla en datos y resultados que ayuden a tomar desiciones estrategicas que
+                    beneficien a la empresa.
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="row ptb2rem">
-        <div class="modes-div col s12 m3 black-text center-align ">
-            <h4 class="title">On site</h2>
-            <div class="col s12 line pink mtb1rem"></div>
-            <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
-        </div>
-        <div class="modes-div col s12 m3 black-text center-align">
-            <h4 class="title">Near shore</h2>
-            <div class="col s12 line purple mtb1rem"></div>
-            <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
-        </div>
-        <div class="modes-div col s12 m3 black-text center-align">
-            <h4 class="title">Off shore</h2>
-            <div class="col s12 line indigo darken-4 mtb1rem"></div>
-            <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
-        </div>
-        <div class="modes-div col s12 m3 black-text center-align">
-            <h4 class="title">Implants</h2>
-            <div class="col s12 line brown mtb1rem"></div>
-            <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+   <!-- Fact Mask-->
+    <div class="row">
+        <div id="weknow-mask" class="col s12 center-align white-text">
+            <h1 class="title">We Know</h1>
+            <h3>Your businesss</h3>
         </div>
     </div>
 
-<!-- Fact Mask-->
+    <!-- Facts section -->
+    <div id="weknow-row" class="row white">
+        <div class="carousel other-class">
+            <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
+            <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+            <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+            <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+            <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+        </div>
+    </div>
+    <div class="row ptb2rem">
+        <div class="modes-div col s12 m6 l3 black-text center-align ">
+            <h4 class="title">On site</h2>
+                <div class="col s12 line pink mtb1rem"></div>
+                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+        </div>
+        <div class="modes-div col s12 m6 l3 black-text center-align">
+            <h4 class="title">Near shore</h2>
+                <div class="col s12 line purple mtb1rem"></div>
+                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+        </div>
+        <div class="modes-div col s12 m6 l3 black-text center-align">
+            <h4 class="title">Off shore</h2>
+                <div class="col s12 line indigo darken-4 mtb1rem"></div>
+                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+        </div>
+        <div class="modes-div col s12 m6 l3 black-text center-align">
+            <h4 class="title">Implants</h2>
+                <div class="col s12 line brown mtb1rem"></div>
+                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+        </div>
+    </div>
+
+    <!-- Fact Mask-->
     <div class="row">
-        <div id="fact-mask" class="col s12 center-align white-text"> 
+        <div id="fact-mask" class="col s12 center-align white-text">
             <h1>We deliver</h1>
             <h3>better, faster, stronger</h3>
         </div>
     </div>
 
-<!-- Facts section -->
+    <!-- Facts section -->
     <div id="fact-row" class="row indigo darken-4 white-text">
-        <div class="col offset-m2 m8">
-            <div class="col s6 m2">
+        <div class="col s12">
+            <div class="col s6 m4 l2">
                 <div class="row">
                     <div class="col offset-m3 m6 offset-s2 s8">
                         <img class="responsive-img fact-img" src="media/img/factProject.png">
                     </div>
                     <div class="col s12 fact-text">
                         <p>Proyectos con</p>
-                        <h4>+5000</h4>
+                        <h4 class="count">+5000</h4>
                         <p>Usuarios</p>
                     </div>
                 </div>
             </div>
-            <div class="col s6 m2">
-                    <div class="col offset-m3 m6 offset-s2 s8">
-                        <img class="responsive-img fact-img" src="media/img/factClients.png">
-                    </div>
-                    <div class="col s12 fact-text">
-                        <p>Mas de</p>
-                        <h4>+180</h4>
-                        <p>Clientes felices</p>
-                    </div>
-            </div>            
-            <div class="col s6 m2">
-                    <div class="col offset-m3 m6 offset-s2 s8">
-                        <img class="responsive-img fact-img" src="media/img/factQlik.png">
-                    </div>
-                    <div class="col s12 fact-text">
-                        <p>Mas de</p>
-                        <h4>+500</h4>
-                        <p>Proyectos Qlik</p>
-                    </div>
+            <div class="col s6 m4 l2">
+                <div class="col offset-m3 m6 offset-s2 s8">
+                    <img class="responsive-img fact-img" src="media/img/factClients.png">
+                </div>
+                <div class="col s12 fact-text">
+                    <p>Mas de</p>
+                    <h4 class="count">+180</h4>
+                    <p>Clientes felices</p>
+                </div>
             </div>
-            <div class="col s6 m2">
-                    <div class="col offset-m3 m6 offset-s2 s8">
-                <img class="responsive-img fact-img" src="media/img/factExp.png">
-                    </div>
-                    <div class="col s12 fact-text">
-                        <p>Mas de</p>
-                        <h4>+250K</h4>
-                        <p>Horas de experiencia</p>
-                    </div>
+            <div class="col s6 m4 l2">
+                <div class="col offset-m3 m6 offset-s2 s8">
+                    <img class="responsive-img fact-img" src="media/img/factQlik.png">
+                </div>
+                <div class="col s12 fact-text">
+                    <p>Mas de</p>
+                    <h4 class="count">+500</h4>
+                    <p>Proyectos Qlik</p>
+                </div>
             </div>
-            <div class="col s6 m2">
-                    <div class="col offset-m3 m6 offset-s2 s8">
-                        <img class="responsive-img fact-img" src="media/img/factReg.png">
-                    </div>
-                    <div class="col s12 fact-text">
-                        <p>Mas de</p>
-                        <h4>+2000</h4>
-                        <p>Millones de registros</p>
-                    </div>
+            <div class="col s6 m4 l2">
+                <div class="col offset-m3 m6 offset-s2 s8">
+                    <img class="responsive-img fact-img" src="media/img/factExp.png">
+                </div>
+                <div class="col s12 fact-text">
+                    <p>Mas de</p>
+                    <h4 class="count">+250K</h4>
+                    <p>Horas de experiencia</p>
+                </div>
             </div>
-            <div class="col s6 m2">
-                    <div class="col offset-m3 m6 offset-s2 s8">
-                <img class="responsive-img fact-img" src="media/img/factSectors.png">
-                    </div>
-                    <div class="col s12 fact-text">
-                        <p>Proyectos</p>
-                        <h4>+10</h4>
-                        <p>Sectores</p>
-                    </div>
+            <div class="col s6 m4 l2">
+                <div class="col offset-m3 m6 offset-s2 s8">
+                    <img class="responsive-img fact-img" src="media/img/factReg.png">
+                </div>
+                <div class="col s12 fact-text">
+                    <p>Mas de</p>
+                    <h4 class="count">+2000</h4>
+                    <p>Millones de registros</p>
+                </div>
+            </div>
+            <div class="col s6 m4 l2">
+                <div class="col offset-m3 m6 offset-s2 s8">
+                    <img class="responsive-img fact-img" src="media/img/factSectors.png">
+                </div>
+                <div class="col s12 fact-text">
+                    <p>Proyectos</p>
+                    <h4 class="count">+10</h4>
+                    <p>Sectores</p>
+                </div>
             </div>
         </div>
     </div>
 
-<!-- Platforms section -->
+    <!-- Platforms section -->
     <div class="row platformdiv ptb2rem">
         <div class="col s12">
-            <div class="col offset-m2 m8 offset-s1 s10 left-align cyan-text text-lighten-3"><h1 class="title">When sience<br>meets technology</h1></div>
+            <div class="col offset-m2 m8 offset-s1 s10 left-align cyan-text text-lighten-3">
+                <h1 class="title">When sience<br>meets technology</h1>
+            </div>
             <div class="col offset-m2 m5 offset-s1 s10 line cyan lighten-3"></div>
-            <div class="col offset-m2 m8 l7 offset-s1 s10 left-align"><h5 class="subtitle">Everything is easier when you have the best partners</h5></div>
+            <div class="col offset-m2 m8 l7 offset-s1 s10 left-align">
+                <h5 class="subtitle">Everything is easier when you have the best partners</h5>
+            </div>
             <div class="col offset-m2 m7 offset-s1 s10 left-align">
                 <p class="paragraph">
-                    Para poder convertir tus datos en soluciones implementamos softwares
-                    disruptivos con la capacidad de manejar grandes cantidades de informacion
-                    de formar organizada.
+                    Para poder convertir tus datos en soluciones implementamos softwares disruptivos con la capacidad de manejar grandes cantidades
+                    de informacion de formar organizada.
                 </p>
             </div>
             <div class="col offset-s1 s10">
-            <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
-            <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/tableaulogo.png"></div>
-            <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/rapidminerlogo.png"></div>
+                <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
+                <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/tableaulogo.png"></div>
+                <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/rapidminerlogo.png"></div>
             </div>
 
         </div>
     </div>
 
-<!-- Team tag section -->
+    <!-- Team tag section -->
     <img id="team-img" src="media/img/team.jpg" />
 
 
-<!-- Blog section -->
+    <!-- Blog section -->
     <div class="row blog-bg section-div valign-wrapper">
         <div class="col offset-s2 s8">
             <h1 class="white-text right-align">blog</h1>
         </div>
     </div>
 
-<!-- Contact section -->
+    <!-- Contact section -->
     <div class="row">
         <div class="col s12">
-            <div class="col offset-m2 m8 offset-s1 s10 left-align brown-text "><h1 class="title">Let's have a coffee</h1></div>
+            <div class="col offset-m2 m8 offset-s1 s10 left-align brown-text ">
+                <h1 class="title">Let's have a coffee</h1>
+            </div>
             <div class="col offset-m2 m8 offset-s1 s10 line brown"></div>
 
 
-    <form class="col offset-m2 m8 offset-s1 s10 coffeeform">
-      <div class="row">
-        <div class="input-field col s12 m6">
-          <input id="first_name" type="text" class="validate">
-          <label for="first_name">Nombre</label>
-        </div>
-        <div class="input-field col s12 m6">
-          <input id="company" type="text" class="validate">
-          <label for="company">Compañia</label>
-        </div>
-        <div class="input-field col s12 m6">
-          <input id="email" type="text" class="validate">
-          <label for="email">Correo</label>
-        </div>
-        <div class="input-field col s12 m6">
-          <input id="phone" type="text" class="validate">
-          <label for="phone">Telefono</label>
-        </div>
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Messsage</label>
-        </div>
-      </div>
-    </form>
+            <form class="col offset-m2 m8 offset-s1 s10 coffeeform">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nombre</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="company" type="text" class="validate">
+                        <label for="company">Compañia</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="email" type="text" class="validate">
+                        <label for="email">Correo</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input id="phone" type="text" class="validate">
+                        <label for="phone">Telefono</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                        <label for="textarea1">Messsage</label>
+                    </div>
+                </div>
+            </form>
 
         </div>
     </div>
+
+    <!-- Footer start -->
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col m3 s12">
+                    <h5 class="white-text">Contact</h5>
+                    <p class="grey-text text-lighten-4">hola@devero.com.mx</p>
+                </div>
+                <div class="col m3 s12">
+                    <h5 class="white-text">Mexico</h5>
+                    <ul class="grey-text text-lighten-4">
+                        <li>Tel 1</li>
+                        <li>Tel 2</li>
+                        <li>Tel 3</li>
+                        <li>Tel 4</li>
+                    </ul>
+                </div>
+                <div class="col m3 s12">
+                    <h5 class="white-text">USA</h5>
+                    <ul class="grey-text text-lighten-4">
+                        <li>Tel 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Derevo
+                <a class="grey-text text-lighten-4 right" href="#!">Aviso de privacidad</a>
+            </div>
+        </div>
+    </footer>
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/init.js"></script>
+    <script type="text/javascript" src="js/html2canvas.min.js"></script>
 </body>
 
 </html>

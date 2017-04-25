@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+
 .section-div{
     height: 60vmin;
 }
@@ -27,19 +30,19 @@
 }
 
 .video-row {
-  height: 75vh;
-  padding-top: calc(33vh - 64px);
+  height: 78vh;
+  /*padding-top: calc(33vh - 64px);*/
   overflow: hidden;
 }
 
 #landing-video{
-    height: 90vmin;
-    margin: -60vmin;  
+    height: 65vh;
+    max-width: 95%;
 }
 
 @keyframes arrow-blink1 {
-    0% {color: white; font-size: 3.8rem;}
-    25% {color: black; font-size: 4rem;}
+    0% {color: white; }
+    25% {color: black;}
     50% {color: white;}
     75% {color: white;}
     100% {color: white;}
@@ -48,8 +51,8 @@
 
 @keyframes arrow-blink2 {
     0% {color: white; }
-    15% {color: white; font-size: 4.8rem;}
-    40% {color: black; font-size: 5rem;}
+    15% {color: white;}
+    40% {color: black;}
     75% {color: white;}
     100% {color: white;}
 }
@@ -57,8 +60,8 @@
 @keyframes arrow-blink3 {
     0% {color: white;}
     25% {color: white;}
-    40% {color: white; font-size: 5.8rem;}
-    65% {color: black; font-size: 6rem;}
+    40% {color: white;}
+    65% {color: black;}
     100% {color: white;}
 }
 
@@ -91,11 +94,6 @@
 .arrow3{
     animation-name: arrow-blink3;
     font-size: 6rem;    
-}
-
-.wediv{
-    height: 35rem;
-    padding-top: 8rem;
 }
 
 .glitch, 
@@ -142,21 +140,60 @@
     animation-timing-function: step-start;
 }
 
+.wediv{
+    height: 35rem;
+    padding-top: 8rem;
+}
+
+.we-img{
+  width: auto;
+  height: 9.5rem;
+}
 
 #we1{
     background-image: url('../media/img/we1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% auto;  
-
+    position: relative;
+    left: 0;
 }
 
+#we1:hover{
+    transition: 2s;
+    left: 100%
+}
+
+#we1:hover ~ #we2{
+    transition: 2s;
+    left: 100%
+}
+
+#we3{
+    transition: 2s;
+    left: 100%
+}
 
 #we2{
-    background-image: url('../media/img/we2.jpg');
+    /*background-image: url('../media/img/we2.jpg');*/
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100% auto;   
+    position: relative;
+    left: 0;
+    overflow: hidden;
+}
+
+#we2vid{
+  overflow: hidden;
+}
+
+#we2vid video{
+  height: 35rem;
+  width: auto;
+  z-index: -1;
+    position: absolute;
+    left: -17.5rem;
 }
 
 #we3{
@@ -164,6 +201,14 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
+}
+
+.wetext:nth-child(2){
+  margin-bottom: -1rem;
+}
+
+.wetext:nth-child(2){
+    font-family: poppins;
 }
 
 .wetext{
@@ -181,15 +226,20 @@
 
 .bidiv{
     background: white; /* For browsers that do not support gradients */    
-    background: -webkit-radial-gradient(white,rgb(228, 247, 243) ); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(white,rgb(228, 247, 243) ); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(white,rgb(228, 247, 243) ); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(white,rgb(228, 247, 243)  ); /* Standard syntax (must be last) */
+    background: -webkit-radial-gradient(white,#bce3ff ); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(white,#bce3ff ); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(white,#bce3ff ); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(white,#bce3ff  ); /* Standard syntax (must be last) */
 }
 
 /*.bi2div{
 
 }*/
+
+
+.item--svg-fill text {
+  fill: url(#pattern);
+}
 
 .bi2line{
     height: 1.8rem;
@@ -198,13 +248,17 @@
 .bititle{
     margin-bottom: 0px;
 }
+
+.bpoint{
+  letter-spacing: normal;
+}
 .bititle1{
-    font-size: 6rem;
-    letter-spacing: -10px;
+    font-size: 9rem;
+    letter-spacing: -.4rem;
 }
 
 .bititle2{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 #bi-img, #team-img{
@@ -224,6 +278,18 @@
     margin-bottom: 0;
 }
 
+
+#weKnow{
+
+}
+
+#weknow-mask{
+    background-image: url(../media/img/weKnowMask.png);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    background-size: auto 100%;
+    background-position: center;
+}
 #fact-mask{
     background-image: url(../media/img/factMask.png);
     padding-bottom: 6rem;
@@ -240,6 +306,20 @@
     padding: 1rem 1rem; 
 }
 
+#fact-row > .col > .col{
+  border-right: .1rem dashed white;
+}
+
+#fact-row > .col > .col:last-child{
+  border-right: 0 dashed white;
+}
+
+@media only screen and (max-width: 601px){
+  #fact-row > .col > .col{
+    border-right: 0 dashed white;
+  }
+}
+
 /*.fact-img{
     padding: 2rem 2rem 0 2rem;
 }*/
@@ -254,15 +334,22 @@
     line-height:  1 !important;    
 }
 .fact-text * {
-    line-height:  0.5 !important;
-    font-weight: bold;
+    line-height:  1 !important;
 }
 
+.fact-text h4 {
+font-weight: 400;
+    letter-spacing: .2px;
+    font-family: roboto;
+}
 .modes-div{
     padding-left: 3rem !important;
     padding-right: 3rem !important;
 }
 
+.modes-div h4{
+    letter-spacing: -3px;
+}
 /*.platformdiv{  
 }*/
 .software-logo{
@@ -341,12 +428,12 @@
 
 }
 .example-three > img:nth-child(2) {
-  left: 4px;
+  left: 5px;
   animation: example-three-anim-1 8s infinite alternate-reverse;
   animation-timing-function: step-start;
 }
 .example-three > img:nth-child(3) {
-  left: -4px;
+  left: -5px;
   animation: example-three-anim-2 8s infinite alternate-reverse;
   animation-timing-function: step-start;
 }
@@ -370,6 +457,18 @@
   background-image: url("../media/img/supportBg.png");
   background-size: 100% auto;
 }
+
+.step{
+    height: 13rem;
+    padding-top: 1rem !important;  
+}
+
+/* Training CSS */
+
+#training-bg{
+  background-image: url("../media/img/training.png");
+  background-size: 100% auto;
+}
 /* Changes to framework Materializecss */
 
 .row{
@@ -380,7 +479,9 @@
 }
 
 .logo-img{
-    width: 95%;
+    margin-top: .6rem;
+    max-height: 2.5rem;
+    width: auto;
 }
 
 body, html {
@@ -388,6 +489,17 @@ body, html {
   height: 100%;
   overflow-x: hidden;
 }
+
+@media only screen and (min-width: 993px){
+  .container {
+      width: 85%;
+  }
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Poppins', sans-serif;
+}
+
 
 /* Animations */
 
@@ -610,7 +722,23 @@ body, html {
 }
 
 .mb1rem{
-    margin-bottom: 1rem;    
+    padding-bottom: 1rem;    
+}
+
+.pt1rem{
+    padding-top: 1rem;
+}
+
+.pb1rem{
+    padding-bottom: 1rem;    
+}
+
+.pt2rem{
+    padding-top: 2rem;
+}
+
+.pb2rem{
+    padding-bottom: 2rem;    
 }
 
 .mtb1rem{
@@ -621,6 +749,11 @@ body, html {
 .ptb2rem{
     padding-bottom: 2rem;
     padding-top: 2rem ;
+}
+
+.ptb5rem{
+    padding-bottom: 5rem;
+    padding-top: 5rem ;
 }
 
 .mtb2rem{

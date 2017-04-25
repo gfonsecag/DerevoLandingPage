@@ -55,31 +55,60 @@
     </div>
 
 
-<!-- Page content -->
+    <!-- Page content -->
 
-    <div id="ond-bg" class="hide-on-small-only"></div>
+    <div id="ond-bg" class="hide-on-med-and-down"></div>
 
     <div class="row ptb2rem">
-        <div class="col offset-s1 s10 offset-m2 m8">
-            <h1 class="title">
-                <span class="indigo-text text-darken-4">ON DEMAND</span>
-            </h1>
+        <div class="col offset-s1 s10 offset-l2 l8">
+            <svg class="svg-defs" style="position: fixed;">
+                <defs>
+                    <pattern id="pattern" patternUnits="objectBoundingBox" width="1" height="1">
+                        <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="media/img/onDemandMask.png" width="450" height="100"></image>
+                    </pattern>
+                </defs>
+            </svg>
+            <div class="demo">
+                <svg width="100%" height="5rem" class="hide-on-small-only">
+                    <text x="0" y="60" style="
+                            font-size: 5rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">ON DEMAND</text>
+                </svg>
+                        <svg width="100%" height="10rem" class="hide-on-med-and-up">
+                        <text x="0" y="70" style="
+                            font-size: 5rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">
+                            ON
+                        </text>
+                        <text x="0" y="130" style="
+                            font-size: 5rem;
+                            font-weight: bolder;
+                            fill: url(#pattern);
+                        ">
+                            DEMAND
+                        </text>
+                    </svg>
+            </div>
         </div>
-        <div class="col offset-m2 m8 offset-s1 s10 left-align">
-            <h5 class="col subtitle teal accent-1 indigo-text text-darken-4 no-margin">Our consultants are always</h5>
+        <div class="col offset-l2 l8 offset-s1 s10 left-align">
+            <h5 class="col teal accent-1 indigo-text text-darken-4 no-margin">Our consultants are always</h5>
             <div class="col s12"></div>
-            <h5 class=" col subtitle teal accent-1 indigo-text text-darken-4">ready for you</h5>
+            <h5 class=" col teal accent-1 indigo-text text-darken-4">ready for you</h5>
         </div>
-        <div class="col offset-m1 m4 offset-s1 s2 line indigo darken-4 mtb2rem"></div>
+        <div class="col offset-l1 l5 offset-s1 s10 line indigo darken-4 mtb2rem"></div>
         <div class="col s12"></div>
-        <div class="col offset-m2 m4 offset-s1 s10">
-            <video controls class ="responsive-video" src="media/video/onDemand.mp4"></video>
+        <div class="col offset-l2 l4 offset-s1 s10">
+            <video controls class="responsive-video" src="media/video/onDemand.mp4"></video>
         </div>
-        <div class="col offset-m1 m4 offset-s1 s10 purple-text  text-darken-4 mtb2rem">
-            <p> Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar nuevos objetivos , 
-                lograr nuevas metas y progresar mediante análisis e interpretacion de su infrmacion.
-                Por medio de distintos metodos y programas extraemos esa información para transformarla en datos y resultados 
-                que ayuden a tomar desiciones estrategicas que beneficien a la empresa.
+        <div class="col offset-l1 l4 offset-s1 s10 purple-text  text-darken-4 mtb2rem">
+            <p> Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar nuevos objetivos , lograr nuevas metas
+                y progresar mediante análisis e interpretacion de su infrmacion. Por medio de distintos metodos y programas
+                extraemos esa información para transformarla en datos y resultados que ayuden a tomar desiciones estrategicas
+                que beneficien a la empresa.
             </p>
         </div>
     </div>
