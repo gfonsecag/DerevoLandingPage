@@ -2,7 +2,7 @@
   // Initialize collapse button
 
  $(document).ready(function(){
-    $('.carousel').carousel({});
+    $('.carousel').carousel();
 //    $('.scrollspy').scrollSpy();
 
 //  var options = [ 
@@ -37,3 +37,7 @@
 
 
   $(".button-collapse").sideNav();
+
+
+
+// Tv off 

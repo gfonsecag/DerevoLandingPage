@@ -30,14 +30,15 @@
 }
 
 .video-row {
-  height: 78vh;
+  height: 78%;
   /*padding-top: calc(33vh - 64px);*/
   overflow: hidden;
 }
 
 #landing-video{
-    height: 65vh;
-    max-width: 95%;
+    max-width: 74%;
+    width: 78rem;
+    padding: 2rem;
 }
 
 @keyframes arrow-blink1 {
@@ -157,16 +158,6 @@
     background-size: 100% auto;  
     position: relative;
     left: 0;
-}
-
-#we1:hover{
-    transition: 2s;
-    left: 100%
-}
-
-#we1:hover ~ #we2{
-    transition: 2s;
-    left: 100%
 }
 
 #we3{
@@ -428,12 +419,12 @@ font-weight: 400;
 
 }
 .example-three > img:nth-child(2) {
-  left: 5px;
+  left: 3.3rem;
   animation: example-three-anim-1 8s infinite alternate-reverse;
   animation-timing-function: step-start;
 }
 .example-three > img:nth-child(3) {
-  left: -5px;
+  left: 3.8rem;
   animation: example-three-anim-2 8s infinite alternate-reverse;
   animation-timing-function: step-start;
 }
@@ -760,3 +751,6 @@ h1, h2, h3, h4, h5{
     margin-bottom: 2rem !important;
     margin-top: 2rem !important;
 }
+
+
+
