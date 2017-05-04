@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
 
-
 .section-div{
-    height: 60vmin;
+    min-height: 35rem;
 }
 
 .title{
@@ -38,7 +37,7 @@
 #landing-video{
     max-width: 74%;
     width: 78rem;
-    padding: 2rem;
+    padding-top: 2rem;
 }
 
 @keyframes arrow-blink1 {
@@ -205,6 +204,7 @@
 .wetext{
     font-size: xx-large;
     text-align: left;
+    margin-bottom: 5px;
 }
 .lightfont{
     font-weight: 200;
@@ -217,10 +217,10 @@
 
 .bidiv{
     background: white; /* For browsers that do not support gradients */    
-    background: -webkit-radial-gradient(white,#bce3ff ); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(white,#bce3ff ); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(white,#bce3ff ); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(white,#bce3ff  ); /* Standard syntax (must be last) */
+    /*background: -webkit-radial-gradient(white,#bce3ff );
+    background: -o-radial-gradient(white,#bce3ff ); 
+    background: -moz-radial-gradient(white,#bce3ff );
+    background: radial-gradient(white,#bce3ff  );  */
 }
 
 /*.bi2div{
@@ -291,6 +291,7 @@
 
 #fact-mask h1{
     line-height: .4;
+    font-weight: bold;
 }
 
 #fact-row{
@@ -322,10 +323,12 @@
 }
 
 .fact-text p:nth-of-type(2){
-    line-height:  1 !important;    
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .fact-text * {
-    line-height:  1 !important;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .fact-text h4 {
@@ -419,12 +422,12 @@ font-weight: 400;
 
 }
 .example-three > img:nth-child(2) {
-  left: 3.3rem;
+  left: 2.5rem;
   animation: example-three-anim-1 8s infinite alternate-reverse;
   animation-timing-function: step-start;
 }
 .example-three > img:nth-child(3) {
-  left: 3.8rem;
+  left: 3rem;
   animation: example-three-anim-2 8s infinite alternate-reverse;
   animation-timing-function: step-start;
 }
@@ -441,6 +444,11 @@ font-weight: 400;
     width: 100%;
 }
 
+/* Platforms*/
+.textwbg{
+    margin-bottom: -1px !important;
+    margin-top: -1px !important;
+}
 
 /* Support CSS */
 
@@ -462,6 +470,10 @@ font-weight: 400;
 }
 /* Changes to framework Materializecss */
 
+html {
+
+    font-family: 'Poppins', sans-serif;
+}
 .row{
     margin-bottom: 0px;
 }
@@ -754,3 +766,12 @@ h1, h2, h3, h4, h5{
 
 
 
+.carousel .carousel-item {
+    width: 150px;
+    height: 150px;
+}
+
+.carousel.carousel-slider .carousel-item {
+    min-height: 250px;
+    position: absolute;
+}

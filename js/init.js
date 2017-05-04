@@ -1,8 +1,20 @@
+  $(".button-collapse").sideNav();
 
-  // Initialize collapse button
+
+  var options = [ {
+    selector: '.count', offset: 0, callback: function(el) { 
+      Materialize.toast("This is our ScrollFire Demo!", 1500 ); } 
+    }, {selector: '#fact-row', offset: 0, callback: function(el) { 
+      Materialize.toast("Please continue scrolling!", 1500 ); } 
+    } ];
+       
+    Materialize.scrollFire(options); 
 
  $(document).ready(function(){
-    $('.carousel').carousel();
+    $('.carousel.carousel-logo').carousel({dist:-30,shift: 0, padding: 65});
+    $('.carousel.carousel-slider').carousel({fullWidth: true});
+    $('.modal').modal();
+
 //    $('.scrollspy').scrollSpy();
 
 //  var options = [ 
@@ -25,18 +37,6 @@
   // Materialize.scrollFire(options); 
 
   });
-
-  var options = [ {
-    selector: '#weknow-row', offset: 50, callback: function(el) { 
-      Materialize.toast("This is our ScrollFire Demo!", 1500 ); } 
-    }, {selector: '#weknow-row', offset: 205, callback: function(el) { 
-      Materialize.toast("Please continue scrolling!", 1500 ); } 
-    } ];
-       
-    Materialize.scrollFire(options); 
-
-
-  $(".button-collapse").sideNav();
 
 
 

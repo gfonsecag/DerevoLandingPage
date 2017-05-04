@@ -18,7 +18,7 @@
 <body class="white">
 
     <!-- Top menu for mobile -->
-    <ul id="slide-out" class="side-nav">
+    <ul id="slide-out" class="side-nav hide-on-large-only">
         <li>
             <div class="userView">
                 <div class="background grey darken-4">
@@ -93,8 +93,8 @@
                 <div class="col offset-s3 s6">
                     <div class="example-three">
                         <img class="we-img" src="media/img/circle.png">
-                        <img class="we-img" src="media/img/circler.png">
-                        <img class="we-img" src="media/img/circleb.png">
+                        <!--<img class="we-img" src="media/img/circler.png">
+                        <img class="we-img" src="media/img/circleb.png">-->
                     </div>
                 </div>
                 <div class="col offset-s3 s6 white-text lightfont wetext glitch" data-text="we play">we play</div>
@@ -190,7 +190,7 @@
                             made simple
                         </text>
                     </svg>
-                        <svg width="100%" height="12rem" class="hide-on-med-and-up">
+                    <svg width="100%" height="12rem" class="hide-on-med-and-up">
                         <text x="0" y="70" style="
                             font-size: 6rem;
                             font-weight: bolder;
@@ -290,7 +290,7 @@
         </div>
     </div>
 
-   <!-- Fact Mask-->
+    <!-- Fact Mask-->
     <div class="row">
         <div id="weknow-mask" class="col s12 center-align white-text">
             <h1 class="title">We Know</h1>
@@ -300,13 +300,39 @@
 
     <!-- Facts section -->
     <div id="weknow-row" class="row white">
-        <div class="carousel other-class">
-            <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
-            <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-            <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-            <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-            <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+        <div class="carousel carousel-logo" style=" height: 200px;">
+            <a class="carousel-item" href="#one!" onclick="$('.carousel').carousel('set', 0)"><img src="media/img/supply-icon.jpg"></a>
+            <a class="carousel-item" href="#two!" onclick="$('.carousel').carousel('set', 1)"><img src="media/img/manuf-icon.jpg"></a>
+            <a class="carousel-item" href="#three!" onclick="$('.carousel').carousel('set', 2)"><img src="media/img/health-icon.jpg"></a>
+            <a class="carousel-item" href="#four!" onclick="$('.carousel').carousel('set', 3)"><img src="media/img/consumer-icon.jpg"></a>
+            <a class="carousel-item" href="#five!" onclick="$('.carousel').carousel('set', 4)"><img src="media/img/pharma-icon.jpg"></a>
         </div>
+        <div class="carousel carousel-slider center" style="height: 250px;">
+            <div class="carousel-fixed-item center">
+                <a class="btn waves-effect white grey-text darken-text-2">button</a>
+            </div>
+            <div class="carousel-item purple-text" href="#one!">
+                <h2>Supply Chain</h2>
+                <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item purple-text" href="#two!">
+                <h2>Second Panel</h2>
+                <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item purple-text" href="#three!">
+                <h2>Third Panel</h2>
+                <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item purple-text" href="#four!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+            <div class="carousel-item purple-text" href="#five!">
+                <h2>Fourth Panel</h2>
+                <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+
     </div>
     <div class="row ptb2rem">
         <div class="modes-div col s12 m6 l3 black-text center-align ">
@@ -424,7 +450,9 @@
                 </p>
             </div>
             <div class="col offset-s1 s10">
-                <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
+                <a href="#qlik-modal">
+                    <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
+                </a>
                 <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/tableaulogo.png"></div>
                 <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/rapidminerlogo.png"></div>
             </div>
@@ -513,6 +541,19 @@
         </div>
     </footer>
 
+    <!--Modals-->
+
+    <!-- Modal Structure -->
+    <div id="qlik-modal" class="modal bottom-sheet">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12 m4 software-logo"><img class="responsive-img" src="media/img/qliklogo.png"></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
