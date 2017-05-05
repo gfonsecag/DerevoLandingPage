@@ -766,12 +766,6 @@ h1, h2, h3, h4, h5{
 
 
 
-.carousel .carousel-item {
-    width: 150px;
-    height: 150px;
-}
-
-.carousel.carousel-slider .carousel-item {
-    min-height: 250px;
-    position: absolute;
+.slick-slide img {
+    margin: auto;
 }
