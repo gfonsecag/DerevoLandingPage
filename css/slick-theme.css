@@ -220,6 +220,7 @@
 .slick-slide {
     padding-top: 20px;
     padding-bottom: 20px;
+    outline: none;
 }
 
 .text-carousel .slick-current{

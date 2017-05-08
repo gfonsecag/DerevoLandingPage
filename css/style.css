@@ -29,13 +29,13 @@
 }
 
 .video-row {
-  height: 78%;
+  height: 82vh;
   /*padding-top: calc(33vh - 64px);*/
   overflow: hidden;
 }
 
 #landing-video{
-    max-width: 74%;
+    max-width: 70%;
     width: 78rem;
     padding-top: 2rem;
 }
@@ -66,7 +66,7 @@
 }
 
 .arrow-row{
-    height: 20vh;
+    height: 13vh;
     overflow: hidden;
 }
 
@@ -141,8 +141,7 @@
 }
 
 .wediv{
-    height: 35rem;
-    padding-top: 8rem;
+    padding-top: 25vh;
 }
 
 .we-img{
@@ -157,11 +156,8 @@
     background-size: 100% auto;  
     position: relative;
     left: 0;
-}
+    height: 90vh;
 
-#we3{
-    transition: 2s;
-    left: 100%
 }
 
 #we2{
@@ -172,18 +168,20 @@
     position: relative;
     left: 0;
     overflow: hidden;
+    height: 90vh;
+
 }
 
 #we2vid{
-  overflow: hidden;
+    height: 90vh;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
 }
 
 #we2vid video{
-  height: 35rem;
-  width: auto;
-  z-index: -1;
-    position: absolute;
-    left: -17.5rem;
+    position: relative;
+    height: 100%;
 }
 
 #we3{
@@ -191,6 +189,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
+    height: 90vh;
 }
 
 .wetext:nth-child(2){
@@ -768,4 +767,49 @@ h1, h2, h3, h4, h5{
 
 .slick-slide img {
     margin: auto;
+}
+
+
+.bg-pink{
+  background-color: #F94B71;
+}
+
+.bg-purple{
+  background-color: #8571EB;
+}
+
+.bg-skyblue{
+  background-color: #8BF1EB;
+}
+
+.bg-teal{
+  background-color: #39F3BF;
+}
+
+.bg-deepblue{
+  background-color: #29486E;
+}
+
+.font-pink{
+  color: #F94B71;
+}
+
+.font-purple{
+  color: #8571EB;
+}
+
+.font-skyblue{
+  color: #8BF1EB;
+}
+
+.font-teal{
+  color: #39F3BF;
+}
+
+.font-deepblue{
+  color: #29486E;
+}
+
+.fact-square {
+    min-height: 200px !important;
 }

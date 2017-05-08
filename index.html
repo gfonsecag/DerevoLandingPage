@@ -8,8 +8,8 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
     <!--Load our personal style-->
     <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
@@ -63,17 +63,11 @@
     <div>
         <div class="row video-row valign-wrapper">
             <div class="col s12 center">
-                <video id="landing-video" src="media/video/dataLogo.mp4" autoplay loop></video>
+                <video id="landing-video" src="media/video/datalogo2.m4v" autoplay loop></video>
             </div>
         </div>
 
         <div class="row arrow-row">
-            <div class="col offset-s4 s4 arrow-col">
-                <i class="material-icons arrow1">keyboard_arrow_down</i>
-            </div>
-            <div class="col offset-s4 s4 arrow-col">
-                <i class="material-icons arrow2">keyboard_arrow_down</i>
-            </div>
             <div class="col offset-s4 s4 arrow-col">
                 <i class="material-icons arrow3">keyboard_arrow_down</i>
             </div>
@@ -90,7 +84,7 @@
 
 
 
-    <div id="content" class="row hide-on-med-and-down">
+    <div id="we-large" class="row hide-on-med-and-down">
         <div id="we1" class="col s12 m4 center we-desktop">
             <div class="wediv">
                 <div class="col offset-s3 s6">
@@ -112,8 +106,8 @@
         </div>
         <div id="we2" class="col s12 m4 center we-desktop">
             <div id="we2vid">
-                <video autoplay loop>
-                    <source src="media/video/ink.mp4" type="video/mp4">
+                <video loop>
+                    <source src="media/video/ink2.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="wediv">
@@ -156,8 +150,11 @@
             <div class="col offset-m2 m9 offset-s1 s10 left-align deep-purple-text text-darken-4">
                 <svg class="svg-defs" style="position: fixed;">
                     <defs>
-                        <pattern id="pattern" patternUnits="objectBoundingBox" width="1" height="1">
-                            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="media/img/bimask.jpg" width="600" height="300"></image>
+                        <pattern id="pattern" patternUnits="userSpaceOnUse" x="-50" y="0" width="800" height="300">
+                            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="media/img/bimask.jpg" width="832" height="394"></image>
+                        </pattern>
+                        <pattern id="pattern2" patternUnits="userSpaceOnUse" x="-40" y="-200" width="800" height="300">
+                            <image xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="media/img/bimask.jpg" width="832" height="394"></image>
                         </pattern>
                     </defs>
                 </svg>
@@ -168,7 +165,7 @@
                             font-weight: bolder;
                             fill: url(#pattern);
                         ">B</text>
-                        <text x="83" y="120" style="
+                        <text x="97" y="120" style="
                             font-size: 11rem;
                             font-weight: bolder;
                             fill: url(#pattern);
@@ -178,7 +175,7 @@
                             font-weight: bolder;
                             fill: url(#pattern);
                         ">I</text>
-                        <text x="158" y="120" style="
+                        <text x="167" y="120" style="
                             font-size: 11rem;
                             font-weight: bolder;
                             fill: url(#pattern);
@@ -188,7 +185,7 @@
                         <text x="0" y="70" style="
                             font-size: 6rem;
                             font-weight: bolder;
-                            fill: url(#pattern);
+                            fill: url(#pattern2);
                         ">
                             made simple
                         </text>
@@ -197,14 +194,14 @@
                         <text x="0" y="70" style="
                             font-size: 6rem;
                             font-weight: bolder;
-                            fill: url(#pattern);
+                            fill: url(#pattern2);
                         ">
                             made
                         </text>
                         <text x="0" y="140" style="
                             font-size: 6rem;
                             font-weight: bolder;
-                            fill: url(#pattern);
+                            fill: url(#pattern2);
                         ">
                             simple
                         </text>
@@ -217,11 +214,18 @@
             <div class="col offset-m2 m7 offset-s1 s10 line deep-purple darken-4"></div>
             <div class="col offset-m2 m7 offset-s1 s10 left-align">
                 <p class="paragraph  deep-purple-text text-darken-4">
-                    Derevo es una empresa que se dedica a ayudar a otras empresas a alcanzar nuevos objetivos , lograr nuevas metas y progresar
-                    mediante análisis e interpretacion de su infrmacion. Por medio de distintos metodos y programas extraemos
-                    esa información para transformarla en datos y resultados que ayuden a tomar desiciones estrategicas que
-                    beneficien a la empresa.
-                </p>
+                    <p>Science, art & human power applied to your information.</p>
+
+                    <p>Derevo is a consulting firm specialized in data discovery projects, adding meaning to your data through
+                        a disrupting methodology.</p>
+
+                    <p>We focus on user friendly analytics applications to bring you the information that really matter.</p>
+
+                    <p>Our goal is provide to your company with an innovative environment to improve your revenue, reduce costs
+                        and minimize risk.</p>
+
+                    <p>You name it, we do it: B.I Strategy, Data Discovery, Analytics, Data Science, Business Data engineering
+                        and tasty margaritas.</p>
             </div>
         </div>
     </div>
@@ -304,48 +308,71 @@
     <!-- Facts section -->
     <div id="weknow-row" class="row white ptb2rem">
         <div class="icon-carousel col offset-l3 l6 offset-m2 m8 s12">
-        <div>
-            <img src="media/img/supply-icon.jpg">
-        </div>
-        <div>
-            <img src="media/img/manuf-icon.jpg">
-        </div>
-        <div><img src="media/img/health-icon.jpg"></div>
-        <div><img src="media/img/consumer-icon.jpg"></div>
-        <div><img src="media/img/pharma-icon.jpg"></div>
-        <div><img src="media/img/consumer-icon.jpg"></div>
-        <div><img src="media/img/pharma-icon.jpg"></div>
+            <div>
+                <img src="media/img/supply-icon.jpg">
+            </div>
+            <div>
+                <img src="media/img/manuf-icon.jpg">
+            </div>
+            <div>
+                <img src="media/img/financial-icon.jpg">
+            </div>
+            <div>
+                <img src="media/img/consumer-icon.jpg">
+            </div>
+            <div>
+                <img src="media/img/pharma-icon.jpg">
+            </div>
+            <div>
+                <img src="media/img/health-icon.jpg">
+            </div>
+            <div>
+                <img src="media/img/retail-icon.jpg">
+            </div>
         </div>
 
         <div class="text-carousel col offset-s2 s8 ptb2rem">
-        <div>
-            <h5>Giro 1</h5>
-            <p>Texto 1</p>
-        </div>
-        <div>
-            <h5>Giro 2</h5>
-            <p>Texto 2</p>            
-        </div>
-        <div>
-            <h5>Giro 3</h5>
-            <p>Texto 3</p>            
-        </div>
-        <div>
-            <h5>Giro 4</h5>
-            <p>Texto 4</p>            
-        </div>
-        <div>            
-            <h5>Giro 5</h5>
-            <p>Texto 5</p>
+            <div>
+                <h5>Supply chain</h5>
+                <p> Cycle times · Client portal · Tracking and efficiency · Client segmentation · Predictive maintenance · Finance
+                    analytics and consolidation</p>
             </div>
-        <div>
-            <h5>Giro 6</h5>
-            <p>Texto 6</p>            
-        </div>
-        <div>
-            <h5>Giro 7</h5>
-            <p>Texto 7</p>            
-        </div>
+            <div>
+                <h5>Manufacturing</h5>
+                <p> · Efficiency and profitability · Quality (OEE, Compliance) · Supply chain analysis · Cost analysis · Financial
+                    analytics and consolidation · Planning precision · Inventory predictions · Expenditure predictions ·
+                    Predictive maintenance · Inventory optimization · Impact of external variables</p>
+            </div>
+            <div>
+                <h5>Financial services</h5>
+                <p> · Client profitability · Client segmentation · Sales analytics · Advanced risk analysis · Fraud prevention
+                    · Change prevention · Predictive analytics · Commission calculation · Sales force optimization · Sentiment
+                    analysis
+                </p>
+            </div>
+            <div>
+                <h5>Consumer products</h5>
+                <p> · Sales and inventory analytics · Financial analytics and consolidation · Market share (Nielsen, exit polls,
+                    etc.) · Supplier portal · Market basket · User behavior · Time-series clustering · Price elasticity ·
+                    Promotion planning · Store assortment · Inventory optimization · Predictive analytics · Sentiment analysis</p>
+            </div>
+            <div>
+                <h5>Pharmaceutical</h5>
+                <p> · Market share · Survey analysis (IMS, Knobloch, …) · Sales analytics · Inventory analytics · Financial analytics
+                    and consolidation · Predictive analytics · Commission calculation · Sales force optimization · Sentiment
+                    analysis
+                </p>
+            </div>
+            <div>
+                <h5>Healt Care</h5>
+                <p>Texto 6</p>
+            </div>
+            <div>
+                <h5>Retail</h5>
+                <p> · Sales and inventory analytics · Financial analytics and consolidation · Market share (Nielsen, exit polls,
+                    etc.) · Supplier portal · Market basket · User behavior · Time-series clustering · Price elasticity ·
+                    Promotion planning · Store assortment · Inventory optimization · Predictive analytics · Sentiment analysis</p>
+            </div>
         </div>
 
 
@@ -353,23 +380,23 @@
     <div class="row ptb2rem">
         <div class="modes-div col s12 m6 l3 black-text center-align ">
             <h4 class="title">On site</h2>
-                <div class="col s12 line pink mtb1rem"></div>
-                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+                <div class="col s12 line bg-pink mtb1rem"></div>
+                <p class="subtitle">Consultants working in your office during short-term projects</p>
         </div>
         <div class="modes-div col s12 m6 l3 black-text center-align">
             <h4 class="title">Near shore</h2>
-                <div class="col s12 line purple mtb1rem"></div>
-                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+                <div class="col s12 line bg-purple mtb1rem"></div>
+                <p class="subtitle">Consultants working remotely from Derevo’s offices.</p>
         </div>
         <div class="modes-div col s12 m6 l3 black-text center-align">
             <h4 class="title">Off shore</h2>
-                <div class="col s12 line indigo darken-4 mtb1rem"></div>
-                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+                <div class="col s12 line bg-skyblue mtb1rem"></div>
+                <p class="subtitle">Consultants working for you towards a specific goal, no matter the time or place.</p>
         </div>
         <div class="modes-div col s12 m6 l3 black-text center-align">
             <h4 class="title">Implants</h2>
-                <div class="col s12 line brown mtb1rem"></div>
-                <p class="subtitle">Consultores trabajando en tu oficina en proyectos de corta duracion</p>
+                <div class="col s12 line bg-teal mtb1rem"></div>
+                <p class="subtitle">Consultants working as part of your team, in your own premises.</p>
         </div>
     </div>
 
@@ -382,32 +409,32 @@
     </div>
 
     <!-- Facts section -->
-    <div id="fact-row" class="row indigo darken-4 white-text">
+    <div id="fact-row" class="row bg-deepblue white-text">
         <div class="col s12">
-            <div class="col s6 m4 l2">
+            <div class="fact-square col s6 m4 l2">
                 <div class="row">
-                    <div class="col offset-m3 m6 offset-s2 s8">
+                    <div class="col offset-m4 m4 offset-s3 s6">
                         <img class="responsive-img fact-img" src="media/img/factProject.png">
                     </div>
                     <div class="col s12 fact-text">
-                        <p>Proyectos con</p>
+                        <p>Projects with</p>
                         <h4 class="count">+5000</h4>
-                        <p>Usuarios</p>
+                        <p>users</p>
                     </div>
                 </div>
             </div>
-            <div class="col s6 m4 l2">
-                <div class="col offset-m3 m6 offset-s2 s8">
+            <div class="fact-square col s6 m4 l2">
+                <div class="col offset-m4 m4 offset-s3 s6">
                     <img class="responsive-img fact-img" src="media/img/factClients.png">
                 </div>
                 <div class="col s12 fact-text">
-                    <p>Mas de</p>
+                    <p></p>
                     <h4 class="count">+180</h4>
-                    <p>Clientes felices</p>
+                    <p>happy clients</p>
                 </div>
             </div>
-            <div class="col s6 m4 l2">
-                <div class="col offset-m3 m6 offset-s2 s8">
+            <div class="fact-square col s6 m4 l2">
+                <div class="col offset-m4 m4 offset-s3 s6">
                     <img class="responsive-img fact-img" src="media/img/factQlik.png">
                 </div>
                 <div class="col s12 fact-text">
@@ -416,8 +443,8 @@
                     <p>Proyectos Qlik</p>
                 </div>
             </div>
-            <div class="col s6 m4 l2">
-                <div class="col offset-m3 m6 offset-s2 s8">
+            <div class="fact-square col s6 m4 l2">
+                <div class="col offset-m4 m4 offset-s3 s6">
                     <img class="responsive-img fact-img" src="media/img/factExp.png">
                 </div>
                 <div class="col s12 fact-text">
@@ -426,8 +453,8 @@
                     <p>Horas de experiencia</p>
                 </div>
             </div>
-            <div class="col s6 m4 l2">
-                <div class="col offset-m3 m6 offset-s2 s8">
+            <div class="fact-square col s6 m4 l2">
+                <div class="col offset-m4 m4 offset-s3 s6">
                     <img class="responsive-img fact-img" src="media/img/factReg.png">
                 </div>
                 <div class="col s12 fact-text">
@@ -436,8 +463,8 @@
                     <p>Millones de registros</p>
                 </div>
             </div>
-            <div class="col s6 m4 l2">
-                <div class="col offset-m3 m6 offset-s2 s8">
+            <div class="fact-square col s6 m4 l2">
+                <div class="col offset-m4 m4 offset-s3 s6">
                     <img class="responsive-img fact-img" src="media/img/factSectors.png">
                 </div>
                 <div class="col s12 fact-text">
@@ -452,17 +479,17 @@
     <!-- Platforms section -->
     <div class="row platformdiv ptb2rem">
         <div class="col s12">
-            <div class="col offset-m2 m8 offset-s1 s10 left-align cyan-text text-lighten-3">
+            <div class="col offset-m2 m8 offset-s1 s10 left-align font-skyblue">
                 <h1 class="title">When sience<br>meets technology</h1>
             </div>
-            <div class="col offset-m2 m5 offset-s1 s10 line cyan lighten-3"></div>
+            <div class="col offset-m2 m5 offset-s1 s10 line bg-skyblue"></div>
             <div class="col offset-m2 m8 l7 offset-s1 s10 left-align">
                 <h5 class="subtitle">Everything is easier when you have the best partners</h5>
             </div>
             <div class="col offset-m2 m7 offset-s1 s10 left-align">
                 <p class="paragraph">
-                    Para poder convertir tus datos en soluciones implementamos softwares disruptivos con la capacidad de manejar grandes cantidades
-                    de informacion de formar organizada.
+                    In order to turn your data into solutions, we implemented disruptive platforms with the capacity to effectively manage great
+                    amounts of information.
                 </p>
             </div>
             <div class="col offset-s1 s10">
