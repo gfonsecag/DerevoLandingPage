@@ -1,18 +1,31 @@
 $(".button-collapse").sideNav();
 
-var options = [{
-  selector: '.count', offset: 0, callback: function (el) {
-    Materialize.toast("This is our ScrollFire Demo!", 1500);
-  }
-}, {
-  selector: '#fact-row', offset: 0, callback: function (el) {
-    Materialize.toast("Please continue scrolling!", 1500);
-  }
-}];
-
-Materialize.scrollFire(options);
-
 $(document).ready(function () {
+
+$('#fact-row').scrollfire({
+
+    // Offsets
+    offset: 0,
+    topOffset: 150,
+    bottomOffset: 150,
+
+    // Fires once when element completely comes into view from the top
+    onTopVisible: function( elm ) {
+        $('.count').each(function () {
+          $(this).prop('Counter',0).animate({
+              Counter: $(this).text()
+          }, {
+              duration: 7000,
+              easing: 'swing',
+              step: function (now) {
+                  $(this).text('+' + Math.ceil(now));
+              }
+          });
+      });
+          console.log("Fire fire");
+    },
+
+});
 
   $('.text-carousel').slick({
     slidesToShow: 1,
