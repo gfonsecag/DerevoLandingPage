@@ -17,36 +17,49 @@
 
 <body>
 
-    <!-- Top menu for mobile -->
-    <ul id="slide-out" class="side-nav">
-        <li>
-            <div class="userView">
-                <div class="background grey darken-4">
-                </div>
-                <a href=""><img src="media/img/logo.jpg"></a>
-            </div>
-        </li>
-        <li><a href="">qué hacemos</a></li>
-        <li><a href="">human power</a></li>
-        <li><a href="">sciencie</a></li>
-        <li><a href="">blog</a></li>
-        <li><a href="">contacto</a></li>
-    </ul>
-
     <!-- Top menu for desktop -->
     <div class="navbar-fixed">
         <nav class="grey darken-4">
             <div class="nav-wrapper">
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li class="logo">
-                        <a href=""><img src="media/img/logo.jpg" class="logo-img"></a>
-                    </li>
-                    <li><a href="">qué hacemos</a></li>
-                    <li><a href="">human power</a></li>
-                    <li><a href="">sciencie</a></li>
-                    <li><a href="">blog</a></li>
-                    <li><a href="">contacto</a></li>
-                </ul>
+                <div class="container hide-on-med-and-down">
+                    <a href="index.html" class="brand-logo"><img src="media/img/logo.png" class="logo-img"></a>
+                    <ul id="nav-mobile" class="right">
+                        <li style="width: 1rem; height: 1rem;"></li>
+                        <li><img class="menu-img" src="media/img/navLang.png"></li>
+                        <li style="width: 1rem; height: 1rem;"></li>
+                        <li class="valign-wrapper">
+                            <div class="center-align">
+                                <a href="ondemand.html">
+                                <img class="menu-img" src="media/img/navOnDemand.png">
+                                <a href="ondemand.html">on demand</a>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="valign-wrapper">
+                            <div class="center-align">
+                                <a href="training.html">
+                                <img class="menu-img" src="media/img/navTraining.png">
+                                <a href="training.html">training</a>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="valign-wrapper">
+                            <div class="center-align">
+                                <a href="support.html">
+                                <img class="menu-img" src="media/img/navSupport.png">
+                                <a href="support.html">support</a>
+                                </a>
+                            </div>
+                        </li>
+                        <!--<li class="valign-wrapper">
+                            <div class="center-align">
+                                <img class="menu-img" src="media/img/navOnCloud.png">
+                                <a href="">on cloud</a>
+                            </div>
+                        </li>-->
+                    </ul>
+                </div>
+                <a href="#" class="brand-logo center hide-on-large-only"><img src="media/img/logo.png" class="logo-img"></a>
                 <ul id="nav-mobile" class="left hide-on-large-only">
                     <li><a href=""><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
                 </ul>
@@ -54,10 +67,45 @@
         </nav>
     </div>
 
+    <!-- Top menu for mobile -->
+    <ul id="slide-out" class="side-nav hide-on-large-only">
+        <li>
+            <div class="userView">
+                <div class="background grey darken-4">
+                </div>
+                <a href="index.html"><img src="media/img/logo.jpg"></a>
+            </div>
+        </li>
+        <li class="valign-wrapper">
+            <div class="center-align">
+                <a href="ondemand.html">
+                                <img class="menu-img" src="media/img/navOnDemand.png">
+                                <a href="ondemand.html">on demand</a>
+                </a>
+            </div>
+        </li>
+        <li class="valign-wrapper">
+            <div class="center-align">
+                <a href="training.html">
+                                <img class="menu-img" src="media/img/navTraining.png">
+                                <a href="training.html">training</a>
+                </a>
+            </div>
+        </li>
+        <li class="valign-wrapper">
+            <div class="center-align">
+                <a href="support.html">
+                                <img class="menu-img" src="media/img/navSupport.png">
+                                <a href="support.html">support</a>
+                </a>
+            </div>
+        </li>
+    </ul>
+
 
     <!-- Page content -->
 
-    <div id="support-bg" class="row pb2rem">
+    <div id="support-bg" class="row ptb3rem">
         <div class="col offset-s1 s10 offset-m2 m8">
             <h1 class="title">
                 <span class="white-text">SUPPORT</span>
@@ -71,9 +119,8 @@
     <div class="row ptb2rem">
 
         <div class="col offset-m2 m9 offset-s1 s10">
-            <p> Para poder ayudarte necesitamos entender lo que esta pasando, en la siguiente forma de contacto te pedimos que
-                nos cuentes con detalle el problema y nos lo hagas llegar, en cuento recivamos tu solicitud nos pondremos
-                en contacto contigo.
+            <p> In order to assist you, we need to understand what you’re going through. We ask that you explain your problem
+                in detail using the form below. Please submit it to us, and we will get in touch very soon.
             </p>
         </div>
 
@@ -105,7 +152,7 @@
             </form>
         </div>
         <div class="col m4 s12 mtb2rem white-text center-align">
-            <img src="media/img/supportSteps.png">
+            <img class="responsive-img" src="media/img/supportSteps.png">
         </div>
     </div>
 

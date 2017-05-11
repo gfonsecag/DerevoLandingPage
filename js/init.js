@@ -2,7 +2,9 @@ $(".button-collapse").sideNav();
 
 $(document).ready(function () {
 
-  $('#we-know').scrollfire({
+  window.fire = 0;
+
+  $('#fact-mask').scrollfire({
 
     // Offsets
     offset: 0,
@@ -10,19 +12,21 @@ $(document).ready(function () {
     bottomOffset: 150,
 
     // Fires once when element completely comes into view from the top
-    onBottomVisible: function (elm) {
+    onBottomIn: function (elm) {
+      if(window.fire == 0){
       $('.count').each(function () {
         $(this).prop('Counter', 0).animate({
           Counter: $(this).text()
         }, {
-            duration: 7000,
-            easing: 'swing',
+            duration: 5000,
+            easing: 'easeInCubic',
             step: function (now) {
               $(this).text('+' + Math.ceil(now));
             }
           });
       });
-      console.log("Fire fire");
+      window.fire = 1;
+      }
     },
 
   });
@@ -62,6 +66,14 @@ $(document).ready(function () {
     ]
   });
 
+  $('.discovery-slider').slick({
+    arrows: false,
+    draggable: false,
+    fade: true,
+    swipe:false,
+    touchMove: false,
+  });
+
 });
 
 
@@ -87,6 +99,10 @@ $(".discovery-step-div").click(function () {
   if (!($(this).hasClass("selected"))) {
     $(".discovery-step-div").removeClass("selected");
     $(this).addClass("selected");
+    $(".discovery-step-div").find('i').text("adjust");
+    $(this).find('i').text("keyboard_arrow_down");
+
+    $('.discovery-slider').slick('slickGoTo', $(this).attr("num") - 1);
 
     switch ( $(this).attr("num") ) {
       case "1":
