@@ -1,10 +1,74 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+/* Changes to framework Materializecss */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.row{
+    margin-bottom: 0px;
+}
+.row .col{
+    padding: 0;
+}
+
+.logo-img{
+    margin-top: .6rem;
+    max-height: 2.5rem;
+    width: auto;
+}
+
+.bold-text{
+  font-weight: bold;
+}
+
+.light-text{
+  font-weight: lighter;
+}
+body {
+  margin:0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@media only screen and (min-width: 993px){
+  .container {
+      width: 85%;
+  }
+}
+
+h1, h2, h3, h4, h5{
+  font-family: 'Poppins', sans-serif;
+}
+
+#nav-mobile{
+  font-family: roboto !important;
+}
+
+nav{
+    height: 90px;
+    line-height: 90px;  
+}
+nav ul a {
+    transition: background-color .3s;
+    font-size: .9rem;
+    color: #fff;
+    display: block;
+    padding: 0 14px;
+    cursor: pointer;
+}
+
+nav .button-collapse i {
+    height: 80px;
+    line-height: 80px;
+}
+
 
 .section-div{
     min-height: 35rem;
 }
 
 .title{
+    margin: 0;
     font-weight: bold;
     line-height: 95%;
 }
@@ -26,6 +90,20 @@
 
 .light-line{
     height: 0.1rem;
+}
+
+
+.menu-img{
+  height: 30px;
+  width: auto;
+}
+
+nav li div{
+  padding-top: 15px;
+  line-height: 1.5;
+}
+nav li div a{
+    font-size: .8rem;
 }
 
 .video-row {
@@ -96,8 +174,7 @@
     font-size: 6rem;    
 }
 
-.glitch, 
-.circle {
+.glitch{
   position: relative;
 }
 
@@ -109,35 +186,30 @@
   left: 0;
   width: 100%;
   height: 100%;
+  visibility: hidden;
 }
 
-.circle::before, 
-.circle::after   {
-  content: url("../media/img/circle.png");
-  position: absolute;
-  top: 0;
-  left: 0;
-  max-width: 100%;
-  height: auto;
-}
-.glitch::before {
+.we-select .glitch::before {
   /* ... anything needed to make it identical */
 
   /* variation */
   left: 3px;
   text-shadow: 2px 0 red;
   
-  animation: glitch-anim 8s infinite alternate-reverse;
+  animation: glitch-anim 8s alternate-reverse;
   animation-timing-function: step-start;
+  visibility: inherit;
 }
-.glitch::after {
+.we-select .glitch::after {
   /* ... anything needed to make it identical */
 
   /* variation */
     left: -3px;
     text-shadow: -2px 0 blue;
-    animation: glitch-anim-2 8s infinite alternate-reverse;
+    animation: glitch-anim-2 8s alternate-reverse;
     animation-timing-function: step-start;
+  visibility: inherit;
+
 }
 
 .wediv{
@@ -153,7 +225,7 @@
     background-image: url('../media/img/we1.jpg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100% auto;  
+    background-size: auto 100%;
     position: relative;
     left: 0;
     height: 90vh;
@@ -187,9 +259,13 @@
 #we3{
     background-image: url('../media/img/we3.jpg');
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% auto;
+    background-position: left center;
+    background-size: auto 100%;
     height: 90vh;
+}
+
+#we3:hover {
+    background-image: url('../media/img/we3.1.jpg');
 }
 
 .wetext:nth-child(2){
@@ -238,9 +314,13 @@
     font-size: 3rem;
 }
 
-#bi-img, #team-img{
+#bi-img, #team-img, .blog-img{
     width: 100vw;
     height: auto;
+}
+
+#team-img{
+      margin-bottom: -7px;
 }
 
 #discovery-div{
@@ -252,6 +332,7 @@
  background-image: url("../media/img/discoveryMask.png");
  background-size: 100% auto;
  background-position: bottom;
+ background-repeat: no-repeat;
  padding-bottom: 3rem;
  z-index: 1;
  position: relative;
@@ -261,36 +342,56 @@
     position: relative;
     z-index: 0;
     top: -4rem;
+    /*margin-bottom: -4rem;*/
+    height: 23rem;
 }
+
 .discovery-step{
-    padding-top: 6rem !important;
-    padding-bottom: 8rem !important;
-    margin-bottom: 1rem;
-    height: 20rem;
+    padding-top: 3rem !important;
+    height: 14rem;
+    transition: .25s;
 }
+
+.selected .discovery-step  {
+    transition: .5s;
+    padding-top: 4.5rem !important;
+    height: 15.5rem;
+}
+
+.discovery-step-2{
+    /*padding-top: 6rem !important;*/
+    /* padding-bottom: 8rem !important; */
+    /* margin-bottom: 1rem; */
+    height: 7rem;
+    -webkit-border-radius:0px 0px 7rem 7rem;
+    -moz-border-radius:0px 0px 7rem 7rem;
+    border-radius: 0px 0px 180px 180px;
+    z-index: -1;
+    position: relative;
+}
+
 
 .discovery-step p{
     margin-top: 0;
     margin-bottom: 0;
+    text-align: center;
 }
 
-
-#weKnow{
-
+#we-know-bg{
+    /*background-image: url(../media/img/weknowBg.jpg);*/
 }
-
 #weknow-mask{
     background-image: url(../media/img/weKnowMask.png);
     padding-bottom: 2rem;
     padding-top: 2rem;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-position: center;
 }
 #fact-mask{
     background-image: url(../media/img/factMask.png);
     padding-bottom: 6rem;
     padding-top: 6rem;
-    background-size: auto 100%;
+    background-size: 100% 100%;
     background-position: center;
 }
 
@@ -317,6 +418,17 @@
   }
 }
 
+
+@media only screen and (max-width: 800px){
+
+#weknow-mask{
+    background-size: auto 100%;
+}
+
+#fact-mask{
+    background-size: auto 100% !important;
+}
+}
 /*.fact-img{
     padding: 2rem 2rem 0 2rem;
 }*/
@@ -472,40 +584,6 @@ font-weight: 400;
 #training-bg{
   background-image: url("../media/img/training.png");
   background-size: 100% auto;
-}
-/* Changes to framework Materializecss */
-
-html {
-
-    font-family: 'Poppins', sans-serif;
-}
-.row{
-    margin-bottom: 0px;
-}
-.row .col{
-    padding: 0;
-}
-
-.logo-img{
-    margin-top: .6rem;
-    max-height: 2.5rem;
-    width: auto;
-}
-
-body, html {
-  margin:0;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-@media only screen and (min-width: 993px){
-  .container {
-      width: 85%;
-  }
-}
-
-h1, h2, h3, h4, h5{
-  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -729,6 +807,9 @@ h1, h2, h3, h4, h5{
     margin-top: 1rem;
 }
 
+.mt2rem{
+    margin-top: 2rem;
+}
 .mb1rem{
     padding-bottom: 1rem;    
 }
@@ -794,6 +875,10 @@ h1, h2, h3, h4, h5{
 
 .bg-deepblue{
   background-color: #29486E;
+}
+
+.bg-oceanblue{
+  background-color: #45BBF1;
 }
 
 .font-pink{
